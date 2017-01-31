@@ -21,64 +21,62 @@ File.open("now_follows_1475800723", "w+") do |f|
   f.puts now_follows_1475800723.to_json
 end
 sleep 10
-=end
-#=begin
 now_follows_433830036 = client.friends("nero3133").map{|u| [u.id, u.screen_name]}
 File.open("now_follows_433830036", "w+") do |f|
   f.puts now_follows_433830036.to_json
 end
 sleep 10
-=begin
+=end
+
 begin
   now_follows_1554838951 = client.friends("kurokumi22").map{|u| [u.id, u.screen_name]}
   File.open("now_follows_1554838951", "w+") do |f|
-    f.puts now_follows_1475800723.to_json
+    f.puts now_follows_1554838951.to_json
   end
 rescue => ex
   p ex
 end
 
-sleep 10
+sleep 900
 
 begin
   now_follows_3019251372 = client.friends("kanemachi23").map{|u| [u.id, u.screen_name]}
   File.open("now_follows_3019251372", "w+") do |f|
-    f.puts now_follows_1475800723.to_json
+    f.puts now_follows_3019251372.to_json
   end
 rescue => ex
   p ex
 end
 
-sleep 10
+sleep 900
 
 begin
   now_follows_3104526234 = client.friends("1155James55").map{|u| [u.id, u.screen_name]}
   File.open("now_follows_3104526234", "w+") do |f|
-    f.puts now_follows_1475800723.to_json
+    f.puts now_follows_3104526234.to_json
   end
 rescue => ex
   p ex
 end
 
-sleep 10
+sleep 900
 
 begin
   now_follows_3356110393 = client.friends("yui728tosaka").map{|u| [u.id, u.screen_name]}
   File.open("now_follows_3356110393", "w+") do |f|
-    f.puts now_follows_1475800723.to_json
+    f.puts now_follows_3356110393.to_json
   end
 rescue => ex
   p ex
 end
 
-sleep 10
+sleep 900
 
 begin
   now_follows_515649925 = client.friends("amediaana").map{|u| [u.id, u.screen_name]}
   File.open("now_follows_515649925", "w+") do |f|
-    f.puts now_follows_1475800723.to_json
+    f.puts now_follows_515649925.to_json
   end
 rescue => ex
   p ex
 end
-=end

@@ -17,5 +17,11 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = "KKhBck4dYnEv5EqFv83PnDGtxEFi3KSRdAwyG8935YhFz"
 end
 
-binding.pry
-p clinet.user
+ids = ["1475800723", "3104526234", "433830036", "3019251372", "3356110393" ,"515649925"]
+ids.each do |id|
+  #この時点でのname_to_idはuser_order1にあったもの（つまり追跡出来ているかつ最初のz店でフォローされてたもの）
+  name_to_id = ActiveSupport::JSON.decode(File.read(id +"_name_to_id"))
+  unfollowed_ids = ActiveSupport::JSON.decode(File.read("#{id}_unfollowed"))
+
+  binding.pry
+end
